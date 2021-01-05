@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  background-color: #ef5350;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+img{
+  height: 48px;
+  margin-left: 40px;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+nav{
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 40px;
+}
+nav a:hover{
+  color: rgb(201, 236, 220);
 }
 
-.App-link {
-  color: #61dafb;
+.list-wrap{
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-wrap .pokemon-items{
+  margin: 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid rgb(53, 247, 166);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(252, 249, 243);
+
+}
+
+.pokemon-items a{
+  color: rgb(253, 101, 101);
+  text-decoration: none;
+  font-size: 18px;
+}
+.pokemon-items a:hover{
+  color: red;
 }
